@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.CORE", "KGGames.CORE\KGGames.CORE.csproj", "{826C8486-CAC6-4845-95CC-1BB55488CB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.DAL", "KGGames.DAL\KGGames.DAL.csproj", "{9D124EFE-BA69-4545-8E96-D6F79D81491D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.MAP", "KGGames.MAP\KGGames.MAP.csproj", "{A8DA7CE0-1297-4778-AA4D-1A32C42BCBDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.ENTİTİES", "KGGames.ENTİTİES\KGGames.ENTİTİES.csproj", "{50C3447C-A47E-43E8-9312-65DF210823FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.SERVİCE", "KGGames.SERVİCE\KGGames.SERVİCE.csproj", "{2E8E31AB-C026-4A4F-82C0-90FEB9DE4755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGGames.Web.API", "KGGames.Web.API\KGGames.Web.API.csproj", "{D649E964-651A-4EE3-B6F6-68F8FFE972BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826C8486-CAC6-4845-95CC-1BB55488CB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826C8486-CAC6-4845-95CC-1BB55488CB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826C8486-CAC6-4845-95CC-1BB55488CB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826C8486-CAC6-4845-95CC-1BB55488CB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D124EFE-BA69-4545-8E96-D6F79D81491D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D124EFE-BA69-4545-8E96-D6F79D81491D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D124EFE-BA69-4545-8E96-D6F79D81491D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D124EFE-BA69-4545-8E96-D6F79D81491D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DA7CE0-1297-4778-AA4D-1A32C42BCBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DA7CE0-1297-4778-AA4D-1A32C42BCBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DA7CE0-1297-4778-AA4D-1A32C42BCBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DA7CE0-1297-4778-AA4D-1A32C42BCBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C3447C-A47E-43E8-9312-65DF210823FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C3447C-A47E-43E8-9312-65DF210823FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C3447C-A47E-43E8-9312-65DF210823FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C3447C-A47E-43E8-9312-65DF210823FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8E31AB-C026-4A4F-82C0-90FEB9DE4755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8E31AB-C026-4A4F-82C0-90FEB9DE4755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8E31AB-C026-4A4F-82C0-90FEB9DE4755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8E31AB-C026-4A4F-82C0-90FEB9DE4755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D649E964-651A-4EE3-B6F6-68F8FFE972BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D649E964-651A-4EE3-B6F6-68F8FFE972BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D649E964-651A-4EE3-B6F6-68F8FFE972BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D649E964-651A-4EE3-B6F6-68F8FFE972BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AA29B07-E1A8-41BB-AE90-D1224D8CED9C}
+	EndGlobalSection
+EndGlobal
