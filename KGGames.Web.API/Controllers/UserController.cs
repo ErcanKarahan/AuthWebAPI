@@ -37,7 +37,7 @@ namespace KGGames.Web.API.Controllers
         }
 
         // GET: GetUser/id
-        [/*Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]*/
+        /*[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]*/
         [HttpGet]
         public async Task<IDataResult<UserDTO>> GetUser(int userId)
         {
