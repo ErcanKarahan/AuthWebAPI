@@ -12,5 +12,8 @@ namespace KGGames.CORE.DTO_s.User
         public string? Email { get; set; }
         public UserRole Role { get; set; }
         public bool UserActive { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+
     }
 }

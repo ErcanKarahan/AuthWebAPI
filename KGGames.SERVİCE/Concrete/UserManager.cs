@@ -75,7 +75,7 @@ namespace KGGames.SERVİCE.Concrete
         {
             var cryptedEntryPassword = DantexCrypt.Crypt(userLoginDTO.Password);
 
-            var user = await _unitOfWork.UserRepository.GetAsync(x => x.Email == userLoginDTO.Email && x.Password == cryptedEntryPassword);
+            var user = await _unitOfWork.UserRepository.GetAsync(x => x.Email == userLoginDTO.Email && x.Password == cryptedEntryPassword,x=>x.UserProfile);
 
             if (user != null)
             {
@@ -113,7 +113,9 @@ namespace KGGames.SERVİCE.Concrete
                     {
                         EmailId = user.Data.Email,
                         GuidId = Guid.NewGuid(),
-                        Role = user.Data.Role
+                        Role = user.Data.Role,
+                        FirstName=user.Data.FirstName,
+                        LastName=user.Data.LastName
                     }, _jwtSettings);
                 }
                 else

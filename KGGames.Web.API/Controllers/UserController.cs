@@ -25,9 +25,7 @@ namespace KGGames.Web.API.Controllers
             //_photoManager = photoManager;
         }
 
-
-
-
+        
 
         //Purpose of this endpoint is meet to request that come from client side and create & give a JSON web token to client side.
         [HttpPost]
@@ -37,7 +35,7 @@ namespace KGGames.Web.API.Controllers
         }
 
         // GET: GetUser/id
-        /*[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]*/
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         [HttpGet]
         public async Task<IDataResult<UserDTO>> GetUser(int userId)
         {
@@ -46,7 +44,6 @@ namespace KGGames.Web.API.Controllers
         }
 
         //POST:AddUser and muss add a new UserRole to use the Property.
-        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         public async Task<KGGames.CORE.Utilities.Abstract.IResult> AddUser(UserAddDTO userAddDto)
         {
@@ -56,7 +53,7 @@ namespace KGGames.Web.API.Controllers
 
 
         //DELETE;DeleteUser
-        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         [HttpDelete]
         public async Task<KGGames.CORE.Utilities.Abstract.IResult> DeleteUser(int id)
         {
@@ -64,14 +61,14 @@ namespace KGGames.Web.API.Controllers
         }
 
         [HttpPut]
-        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         public async Task<KGGames.CORE.Utilities.Abstract.IResult> UpdateUserPassword(UpdateUserPasswordDTO updateUserPasswordDTO)
         {
             return await _userManager.UpdateUserPassword(updateUserPasswordDTO);
         }
 
         [HttpPut]
-        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         public async Task<KGGames.CORE.Utilities.Abstract.IResult> UpdateUserProfile(UpdateUserProfileDTO updateUserProfileDTO)
         {
             return await _userProfileManager.UserProfileUpdate(updateUserProfileDTO);

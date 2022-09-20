@@ -44,6 +44,9 @@ namespace KGGames.CORE.JWT
                 UserToken.Token = new JwtSecurityTokenHandler().WriteToken(JWToken);
                 UserToken.Id = model.Id;
                 UserToken.GuidId = Id;
+                UserToken.FirstName=model.FirstName;
+                UserToken.LastName=model.LastName;
+                UserToken.EmailId = model.EmailId;
                 return UserToken;
             }
             catch (Exception)

@@ -13,7 +13,7 @@ namespace KGGames.SERVİCE.AutoMapper
     {
         public Configuration()
         {
-            CreateMap<User, UserDTO>();
+            CreateMap<User, UserDTO>().ForMember(x=>x.FirstName,opt=>opt.MapFrom(src=>src.UserProfile.FirstName)).ForMember(x=>x.LastName,opt=>opt.MapFrom(src=>src.UserProfile.LastName));
             CreateMap<UserDTO, User>();
 
             CreateMap<UserProfile, UserProfileInsertDTO>();
