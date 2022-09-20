@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KGGames.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220826132947_initial")]
+    [Migration("20220919120741_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
